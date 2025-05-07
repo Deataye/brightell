@@ -30,9 +30,9 @@ const MovingIcons = () => {
   }, [containerWidth]);
 
   return (
-    <div className="bg-gradient-to-br from-blue-50 to-white py-16 overflow-hidden">
+    <div className="bg-gradient-to-br from-blue-50 to-white py-6 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-3xl font-bold text-center text-gray-800 mb-12">
+        <h3 className="text-3xl font-extrabold text-center text-gray-800 mb-12 font-display">
           Trusted Partners
         </h3>
 
