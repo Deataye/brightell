@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-scroll';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -13,6 +14,14 @@ const Header = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  const navItems = [
+    { name: 'HOME', to: 'hero' },
+    { name: 'SERVICES', to: 'services' },
+    { name: 'SUCCESS STORIES', to: 'ai-platform' },
+    { name: 'ABOUT', to: 'about' },
+    { name: 'TEAM', to: 'team' },
+  ];
+
   return (
     <nav className="sticky top-0 z-50 bg-white shadow-md border-b border-gray-100 font-text">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
@@ -25,28 +34,18 @@ const Header = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            {['HOME', 'SERVICES', 'SUCCESS STORIES', 'ABOUT', 'TEAM'].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="text-slate-700 relative font-medium transition duration-300 ease-in-out hover:text-[#4338ca] hover:underline underline-offset-8"
+            {navItems.map(({ name, to }) => (
+              <Link
+                key={name}
+                to={to}
+                smooth={true}
+                duration={500}
+                offset={-80}
+                className="cursor-pointer text-slate-700 relative font-medium transition duration-300 ease-in-out hover:text-[#4338ca] hover:underline underline-offset-8"
               >
-                {item}
-              </a>
+                {name}
+              </Link>
             ))}
-          </div>
-
-          {/* Demo Button */}
-          <div className="hidden md:flex">
-            <a
-              href="#"
-              className="ml-6 inline-flex items-center px-5 py-2 rounded-full text-white bg-[#4338ca] hover:bg-[#3730a3] shadow-md transition duration-300 transform hover:scale-105"
-            >
-              <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M8 5v14l11-7z" />
-              </svg>
-              Demo
-            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -73,14 +72,18 @@ const Header = () => {
       {/* Mobile Menu */}
       <div className={`md:hidden ${isMobileMenuOpen ? 'block' : 'hidden'} px-6 pt-4 pb-6`}>
         <div className="space-y-2">
-          {['HOME', 'SERVICES', 'SUCCESS STORIES', 'ABOUT', 'TEAM'].map((item) => (
-            <a
-              key={item}
-              href="#"
-              className="block text-slate-700 hover:text-[#4338ca] px-3 py-2 rounded-md transition font-medium hover:underline underline-offset-4"
+          {navItems.map(({ name, to }) => (
+            <Link
+              key={name}
+              to={to}
+              smooth={true}
+              duration={500}
+              offset={-80}
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="block cursor-pointer text-slate-700 hover:text-[#4338ca] px-3 py-2 rounded-md transition font-medium hover:underline underline-offset-4"
             >
-              {item}
-            </a>
+              {name}
+            </Link>
           ))}
 
           <a

@@ -56,7 +56,8 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold text-xl mb-4 font-heading">Services</h3>
             <ul className="space-y-3">
-              {['Analytics', 'Automation', 'Modernization', 'Microsoft Fabric'].map((service, i) => (
+              {['Business Transformation', 'Turnkey Business Launchpad', 'Smart Tech & IT Services', 'Workforce & Talent Growth Platform','Digital Operations Hub','']
+              .map((service, i) => (
                 <li key={i}>
                   <a href="#" className="hover:text-orange-500 transition-colors">{service}</a>
                 </li>
@@ -68,9 +69,7 @@ const Footer = () => {
           <div>
             <h3 className="text-orange-500 font-bold text-xl mb-4 font-heading">About Company</h3>
             <p className="mb-4">
-              As a women-owned small business, we specialize in empowering startups, small businesses,
-              and government agencies through strategic consulting, IT services, document digitization,
-              and workforce development.
+              As a women-owned small business, we specialize in empowering startups, small businesses, and government agencies through strategic consulting, IT services, document digitization, and workforce development. Our client-centered approach blends innovation with deep industry expertise—driving real results that move your mission forward.
             </p>
             
           </div>
@@ -80,7 +79,7 @@ const Footer = () => {
       {/* Bottom bar */}
       <div className="border-t border-gray-800 py-6">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-          <p>© Copyright Technoz. All rights reserved.</p>
+          <p>© Copyright Brightel LLC All rights reserved.</p>
 
           <div className="flex items-center space-x-4 mt-4 md:mt-0">
             {/* Social icons */}

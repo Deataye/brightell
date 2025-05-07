@@ -5,26 +5,42 @@ import MovingIcon from "../components/MovingIcon";
 import ServicesSection from "../components/ServicesSection";
 import AIPlatformSection from "../components/AIPlatformSection";
 import TechnologyPlatforms from "../components/TechnologyPlatforms";
-import PowerBIDemo from "../components/PowerBIDemo";
 import AboutUs from "../components/AboutUs";
 import OurTeam from "../components/OurTeam";
 import Footer from "../components/Footer";
+
+import { Element } from "react-scroll";
+
 const Bright = () => {
   return (
     <main className="min-h-screen bg-[#0a0826]">
       <Header />
       <HeroSection />
       <MovingIcon />
-      <ServicesSection />
-      <AIPlatformSection />
-      <TechnologyPlatforms />
-      <PowerBIDemo />
-      <AboutUs />
-      <OurTeam />
+
+      <Element name="services">
+        <ServicesSection />
+      </Element>
+
+      <Element name="ai-platform">
+        <AIPlatformSection />
+      </Element>
+
+      <Element name="platforms">
+        <TechnologyPlatforms />
+      </Element>
+
+      <Element name="about">
+        <AboutUs />
+      </Element>
+
+      <Element name="team">
+        <OurTeam />
+      </Element>
+
       <Footer />
     </main>
   );
 };
 
-
-export default  Bright;
+export default Bright;

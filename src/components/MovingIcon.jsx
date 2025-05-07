@@ -4,12 +4,12 @@ const MovingIcons = () => {
   const icons = [
     { img: '/assets/logo.png', bg: 'bg-blue-100' },
     { img: '/assets/logo-1.png', bg: 'bg-orange-100' },
-    { img: '/assets/fabric.png', bg: 'bg-blue-100' },
-    { img: '/assets/dynamics.png', bg: 'bg-orange-100' },
+    { img: '/assets/sec-logo-1x.png', bg: 'bg-blue-100' },
+    
     { img: '/assets/logo.png', bg: 'bg-blue-100' },
     { img: '/assets/logo-1.png', bg: 'bg-orange-100' },
-    { img: '/assets/fabric.png', bg: 'bg-blue-100' },
-    { img: '/assets/dynamics.png', bg: 'bg-orange-100' }
+    { img: '/assets/sba-logo.svg', bg: 'bg-blue-100' },
+    
   ];
 
   const doubledIcons = [...icons, ...icons];

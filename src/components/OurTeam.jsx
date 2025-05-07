@@ -45,34 +45,34 @@ const OurTeam = () => {
 
 const teamMembers = [
   {
-    name: "Sabeen Saeed",
-    position: "President and CEO",
-    bio: "Founder with healthcare and IT expertise. Nursing degree from Brookhaven College and Microsoft Certified professional."
+    name: "Ava Thompson",
+    position: "Chief Executive Officer",
+    bio: "With a decade of leadership in digital strategy, Ava drives innovation and growth across global teams."
   },
   {
-    name: "Imad Rehman",
-    position: "Executive Vice President",
-    bio: "Transforms enterprises with 20+ years experience. Holds degrees from CSU and University of Virginia."
-  },
-  {
-    name: "David E. Morgan",
-    position: "VP Public Sector",
-    bio: "25+ years in federal business development, specializing in DoD and Homeland Security initiatives."
-  },
-  {
-    name: "Rick Sage",
-    position: "Chief Marketing Officer",
-    bio: "Former Director at Sonata Services and HPE, developed innovative logistics solutions."
-  },
-  {
-    name: "Chris Hill",
+    name: "Liam Carter",
     position: "Chief Technology Officer",
-    bio: "Technology solutions expert with 20+ years experience. Specializes in Microsoft stack."
+    bio: "Liam architects scalable solutions and oversees product development with a focus on emerging tech trends."
   },
   {
-    name: "John R. Ale",
-    position: "VP State and Local Government",
-    bio: "25+ years in government business development. Georgetown University graduate."
+    name: "Maya Patel",
+    position: "Chief Operating Officer",
+    bio: "Maya ensures operational excellence and drives organizational performance through strategic alignment."
+  },
+  {
+    name: "Noah Kim",
+    position: "Chief Marketing Officer",
+    bio: "Noah brings brand vision to life with creative campaigns and data-driven marketing initiatives."
+  },
+  {
+    name: "Sophia Martinez",
+    position: "VP of Product",
+    bio: "Sophia leads product innovation and user-centric design, transforming ideas into powerful digital experiences."
+  },
+  {
+    name: "Ethan Rogers",
+    position: "VP of Finance",
+    bio: "Ethan guides financial planning and analysis, maintaining fiscal responsibility and maximizing ROI."
   }
 ];
 
